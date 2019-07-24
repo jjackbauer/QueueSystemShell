@@ -13,6 +13,8 @@ class Event
 
 	public:
 				Event(long double iat,long double st,long double at,long double bs,long double es, int nq);
+				Event();//Clean Constructor
+				//Define seters and getters
 };
 
 
