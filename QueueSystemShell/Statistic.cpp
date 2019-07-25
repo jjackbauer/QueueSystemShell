@@ -15,7 +15,7 @@ const int Statistic::varValues=11;
 const int Statistic::minValues=13;
 const int Statistic::maxValues=17;
 
-bool hasFactor(int a,int factor)
+bool Statistic::has(int a,int factor)
 {
 	return !(a%factor);
 }

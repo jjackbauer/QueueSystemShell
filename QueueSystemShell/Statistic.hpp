@@ -32,7 +32,7 @@ class Statistic
 		static const int maxValues;//Show maximum values of the variables
 
 
-		bool hasFactor(int a,int factor);
+		bool has(int a,int factor);
 	public:
 		Statistic(std::vector<Event> events);
 		std::string statisticReport(int verbosity);
