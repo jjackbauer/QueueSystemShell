@@ -14,7 +14,18 @@ class Event
 	public:
 				Event(long double iat,long double st,long double at,long double bs,long double es, int nq);
 				Event();//Clean Constructor
-				//Define seters and getters
+				void setArrivalInterval(long double iat);
+				void setServiceTime(long double st);
+				void setArrivalTime(long double at);
+				void setBeginService(long double bs);
+				void setEndService(long double es);
+				void setCurrentQueueSize(int nq);
+				long double getArrivalInterval();
+				long double getServiceTime();
+				long double getArrivalTime();
+				long double getBeginService();
+				long double getEndService();
+				int getCurrentQueueSize();
 };
 
 

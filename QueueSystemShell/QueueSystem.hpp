@@ -18,13 +18,13 @@ class QueueSystem
 		static int	reportVerbosity;
 		std::vector<Event> events;
 		std::vector<Statistic> statistics;
-
 	public:
-		QueueSystem(int numberOfEvents,long double expectedArrivalInterval,long double expectedServiceTime,long double timeScaler=1);
+		QueueSystem(long double expectedArrivalInterval,long double expectedServiceTime,long double timeScaler=1);
 		virtual ~QueueSystem()=0;
 		virtual void start(void)=0;
 		virtual void event(int eventNumber)=0;
 		virtual void simulate(void)=0;
+		virtual void parse(std::string command)=0;
 		void report(std::string fileName);
 		void graphicalDemo(bool newSimulation=false,long double timeScaler=1);
 
